@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import SmallCards from "@/components/SmallCards";
 import Image from "next/image";
 import fetch from 'node-fetch';
+import MediumCards from "@/components/MediumCards";
 
 
 async function fetchExploreData() {
@@ -15,8 +16,8 @@ async function fetchExploreData() {
 }
 
 async function fetchLiveAnywhereData(){
-  const responsTwo = await fetch('https://www.jsonkeeper.com/b/VHHT');
-  const exploreDataTwo = await responsTwo.json();
+  const responseTwo = await fetch('https://www.jsonkeeper.com/b/VHHT');
+  const exploreDataTwo = await responseTwo.json();
   return exploreDataTwo;
 }
 
@@ -50,6 +51,11 @@ export default async function Home() {
           <h2 className="text-3xl py-5 font-semibold">Live any where</h2>
           {/* medium cards */}
         </section>
+          <div className="flex space-x-4 overflow-scroll scrollbar-hide p-3 -ml-3">
+            {exploreDataTwo?.map(item => (
+              <MediumCards key={item.img} img={item.img} title={item.title}/>
+            ))}
+          </div>
       </main>
     </div>
   );
