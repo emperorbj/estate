@@ -4,6 +4,7 @@ import SmallCards from "@/components/SmallCards";
 import Image from "next/image";
 import fetch from 'node-fetch';
 import MediumCards from "@/components/MediumCards";
+import LargeCard from "@/components/LargeCard";
 
 
 async function fetchExploreData() {
@@ -50,12 +51,19 @@ export default async function Home() {
         <section>
           <h2 className="text-3xl py-5 font-semibold">Live any where</h2>
           {/* medium cards */}
-        </section>
+        
           <div className="flex space-x-4 overflow-scroll scrollbar-hide p-3 -ml-3">
             {exploreDataTwo?.map(item => (
               <MediumCards key={item.img} img={item.img} title={item.title}/>
             ))}
           </div>
+        </section>
+
+        <LargeCard
+        img="https://links.papareact.com/4cj"
+        title="The greatest outdoor view"
+        description="Wishlist created by dream house connect"
+        buttonText="get started"/>
       </main>
     </div>
   );
