@@ -64,7 +64,7 @@ const Header = () => {
                         rangeColors={['#F58D61']}
                         onChange={handleSelect}/>
 
-                        <div className='flex border-b items-center mb-4 '>
+                        <div className='flex py-3 border-b items-center mb-4 '>
                             <h2 className='text-2xl flex-grow font-semibold'>Number of guests</h2>
                             <UserGroupIcon className='h-6'/>
                             <input type='number'
