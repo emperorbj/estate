@@ -16,7 +16,7 @@ const Banner = () => {
                 </p>
                 <button className='text-purple-500 bg-white px-10 
                 py-4 rounded-lg font-bold shadow-md
-                hover:shadow-xl active:scale-90 transition duration-150'>I'm flexible</button>
+                hover:shadow-xl active:scale-90 transition duration-150'>I am flexible</button>
             </div>
         </div>
     )
