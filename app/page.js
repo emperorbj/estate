@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner";
 import Header from "@/components/Header";
 import SmallCards from "@/components/SmallCards";
-import Image from "next/image";
+
 import fetch from 'node-fetch';
 import MediumCards from "@/components/MediumCards";
 import LargeCard from "@/components/LargeCard";
