@@ -1,10 +1,10 @@
-import Banner from "@/app/components/Banner";
-import Header from "@/app/components/Header";
-import SmallCards from "@/app/components/SmallCards";
+import Banner from "@/components/Banner";
+import Header from "@/components/Header";
+import SmallCards from "@/components/SmallCards";
 
 import fetch from 'node-fetch';
-import MediumCards from "@/app/components/MediumCards";
-import LargeCard from "@/app/components/LargeCard";
+import MediumCards from "@/components/MediumCards";
+import LargeCard from "@/components/LargeCard";
 
 
 async function fetchExploreData() {
