@@ -1,4 +1,4 @@
-
+'use client'
 import Image from 'next/image';
 import { 
     UserIcon,
@@ -10,10 +10,6 @@ import {
 
 const Header = () => {
 
-
-    // const resetSearch = () => {
-    //     setSearch('')
-    // }
 
     return (
         <header className='sticky top-0 z-50 bg-white grid grid-cols-3 shadow-md p-5 md:px-10'>

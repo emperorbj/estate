@@ -47,7 +47,7 @@ const PropertyClient = () => {
                     className='h-10 relative flex items-center my-auto'>
                     <Image
                         className='cursor-pointer'
-                        // onClick={() => router.push("/")}
+                        onClick={()=> router.push("/")}
                         src="https://links.papareact.com/qd3"
                         layout='fill'
                         style={{ objectFit: 'contain', objectPosition: 'left' }} alt='' />
