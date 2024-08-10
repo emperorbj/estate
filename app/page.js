@@ -7,6 +7,7 @@ import MediumCards from "@/components/MediumCards";
 import LargeCard from "@/components/LargeCard";
 
 
+
 async function fetchExploreData() {
   // Replace with your data fetching logic
   const response = await fetch('https://www.jsonkeeper.com/b/4G1G');

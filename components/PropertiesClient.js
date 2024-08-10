@@ -33,7 +33,9 @@ import Image from 'next/image';
 
     const handleSearch = (event) => {
         const searchQuery = event.target.value;
+
         setQuery(searchQuery);
+
         router.push(`/properties?search=${searchQuery}`);
     };
 
@@ -90,7 +92,7 @@ import Image from 'next/image';
         </main>
         <section className="max-w-8xl mx-auto px-8 sm:px-16">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-            <PropertiesList properties={filteredProperties} />
+                <PropertiesList properties={filteredProperties} />
             </div>
         </section>
         </div>
@@ -102,6 +104,7 @@ import Image from 'next/image';
         <PropertiesClient />
     </Suspense>
 );
+
 
 export default PropertiesClientSuspense;
 
